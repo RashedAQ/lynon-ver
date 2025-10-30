@@ -25,6 +25,7 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    dedupe: ["react", "react-dom"],
   },
   build: {
     target: "es2019",
@@ -44,6 +45,10 @@ export default defineConfig({
           }
         },
       },
+      // Ensure CJS packages that reference global React are transformed properly
+      // and avoid runtime React undefined issues in some deployments
     },
+    commonjsOptions: { transformMixedEsModules: true },
   },
+  optimizeDeps: { include: ["react", "react-dom"] },
 });
