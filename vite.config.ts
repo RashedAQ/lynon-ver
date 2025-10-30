@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import legacy from "@vitejs/plugin-legacy";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
@@ -10,6 +11,15 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    legacy({
+      targets: [
+        "defaults",
+        "not IE 11",
+        "iOS >= 12",
+        "Android >= 7"
+      ],
+      modernPolyfills: true,
+    }),
   ],
   resolve: {
     alias: {
@@ -17,6 +27,7 @@ export default defineConfig({
     },
   },
   build: {
+    target: "es2019",
     chunkSizeWarningLimit: 1024,
     rollupOptions: {
       output: {
