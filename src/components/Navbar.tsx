@@ -52,12 +52,12 @@ const Navbar = () => {
             e.preventDefault();
             scrollToTop();
           }}
-          aria-label="Lynon Solution"
+          aria-label="NEWCOMPANYSITE"
         >
           <div className="relative">
             <img 
               src="/LogoLyono.png" 
-              alt="Lynon Solution Logo" 
+              alt="NEWCOMPANYSITE Logo" 
               className="h-8 sm:h-10 transition-transform duration-300 group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>

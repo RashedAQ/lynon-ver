@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-2">
             <div className="mb-6">
-              <h3 className="font-revamped-bold text-3xl text-white mb-4">Lynon Solution</h3>
+              <h3 className="font-revamped-bold text-3xl text-white mb-4">NEWCOMPANYSITE</h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
                 We help businesses work smarter, not harder. Our AI solutions automate tasks, streamline processes, and grow your revenue.
               </p>
