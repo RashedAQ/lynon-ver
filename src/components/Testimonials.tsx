@@ -10,27 +10,27 @@ interface TestimonialProps {
 }
 
 const testimonials: TestimonialProps[] = [{
-  content: "Atlas transformed our production line, handling repetitive tasks while our team focuses on innovation. 30% increase in output within three months.",
+  content: "Lynon Solution's AI integration transformed our business operations. We've seen a 40% reduction in manual tasks and 30% increase in productivity within just two months.",
   author: "Sarah Chen",
-  role: "VP of Operations, Axion Manufacturing",
+  role: "VP of Operations, TechFlow Industries",
   gradient: "from-blue-700 via-indigo-800 to-purple-900",
   backgroundImage: "/background-section1.png"
 }, {
-  content: "Implementing Atlas in our fulfillment centers reduced workplace injuries by 40% while improving order accuracy. The learning capabilities are remarkable.",
+  content: "Their RPA implementation with UiPath streamlined our entire workflow. What used to take hours now takes minutes, and the accuracy is perfect every time.",
   author: "Michael Rodriguez",
-  role: "Director of Logistics, GlobalShip",
+  role: "Director of IT, GlobalTech Solutions",
   gradient: "from-indigo-900 via-purple-800 to-orange-500",
   backgroundImage: "/background-section2.png"
 }, {
-  content: "Atlas adapted to our lab protocols faster than any system we've used. It's like having another researcher who never gets tired and maintains perfect precision.",
+  content: "The custom AI solution they built for our research department has revolutionized our data analysis. We can process complex datasets 10x faster than before.",
   author: "Dr. Amara Patel",
-  role: "Lead Scientist, BioAdvance Research",
+  role: "Lead Data Scientist, BioInnovate Labs",
   gradient: "from-purple-800 via-pink-700 to-red-500",
   backgroundImage: "/background-section3.png"
 }, {
-  content: "As a mid-size business, we never thought advanced robotics would be accessible to us. Atlas changed that equation entirely with its versatility and ease of deployment.",
+  content: "As a growing startup, we needed cost-effective tech solutions. Lynon Solution delivered exactly what we needed - custom software that scales with our business.",
   author: "Jason Lee",
-  role: "CEO, Innovative Solutions Inc.",
+  role: "CEO, StartupFlow Inc.",
   gradient: "from-orange-600 via-red-500 to-purple-600",
   backgroundImage: "/background-section1.png"
 }];
@@ -59,18 +59,18 @@ const TestimonialCard = ({
 const Testimonials = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  return <section className="py-12 bg-white relative" id="testimonials" ref={sectionRef}> {/* Reduced from py-20 */}
-      <div className="section-container opacity-0 animate-on-scroll">
+  return <section className="pt-8 pb-6 md:py-12 bg-white relative" id="testimonials" ref={sectionRef}>
+      <div className="section-container">
         <div className="flex items-center gap-4 mb-6">
           <div className="pulse-chip">
             <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">04</span>
-            <span>Testimonials</span>
+            <span>Our Work</span>
           </div>
         </div>
         
-        <h2 className="text-5xl font-display font-bold mb-12 text-left">What others say</h2>
+        <h2 className="text-4xl sm:text-5xl font-display font-bold mb-8 sm:mb-12 text-left">Digital Masterpieces We've Crafted</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => <TestimonialCard key={index} content={testimonial.content} author={testimonial.author} role={testimonial.role} gradient={testimonial.gradient} backgroundImage={testimonial.backgroundImage} />)}
         </div>
       </div>

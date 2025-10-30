@@ -1,69 +1,87 @@
-# Welcome to your Lovable project
+# Lynon Solution - AI & Tech Solutions
 
-## Project info
+## About
 
-**URL**: https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727
+Lynon Solution is a cutting-edge technology company specializing in AI solutions, automation, and custom software development. We help businesses work smarter, not harder through innovative technology solutions.
 
-## How can I edit this code?
+## Services
 
-There are several ways of editing your application.
+- Custom AI Solutions
+- AI Integrations
+- Custom Graphic Designs
+- Solution Architecture
+- RAG Systems
+- Business Management Software
+- RPA UiPath & N8N
+- AI Agentic Automation
+- Website Development
 
-**Use Lovable**
+## Technologies We Master
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727) and start prompting.
+- RPA UiPath
+- N8N Automation
+- AI Agentic Systems
+- Web Development
+- Custom Solutions
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v16 or higher)
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd lynon-solution
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+# Build the project
+npm run build
 
-**Use GitHub Codespaces**
+# Preview the production build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Tech Stack
 
-## What technologies are used for this project?
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Build Tool**: Vite
+- **Email Service**: EmailJS
+- **Animations**: Lottie, Framer Motion
 
-This project is built with .
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/          # React components
+├── lib/                # Utility functions
+├── pages/              # Page components
+└── styles/             # Global styles
+```
 
-## How can I deploy this project?
+## Contact
 
-Simply open [Lovable](https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727) and click on Share -> Publish.
+- **Email**: lynon.ai@outlook.com
+- **LinkedIn**: [Lynon Solution](https://linkedin.com/company/lynon-solution)
+- **YouTube**: [Lynon Solution](https://youtube.com/@lynon-solution)
 
-## I want to use a custom domain - is that possible?
+## License
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+© 2025 Lynon Solution. All rights reserved.
